@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Account — Quez Music Corner</title>
+    <link rel="stylesheet" href="quezmusicdoop.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="comments.html">Community Chat</a>
+        <a href="sharing.html">Share Music Taste</a>
+        <a href="register.html" class="active">Create Account</a>
+    </nav>
+
+    <section>
+        <h2>Create Your Account ✨</h2>
+        <p class="intro">Make an account so the site remembers you — your username shows in comments & shares.</p>
+
+        <div id="userPlace" style="margin-bottom:12px;"></div>
+
+        <form id="createAccountForm">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="e.g. marhquez" required>
+
+            <label for="email">Email (optional)</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com">
+
+            <label for="avatar">Avatar image URL (optional)</label>
+            <input id="avatar" name="avatar" type="url" placeholder="https://...">
+
+            <button type="submit">Create Account</button>
+            <div id="create-msg" style="margin-top:8px;color:#ffc6d0;"></div>
+        </form>
+    </section>
+
+    <footer>
+        <p>mwoodard7@student.clayton.edu</p>
+    </footer>
+
+    <script src="storage.js"></script>
+</body>
+</html>

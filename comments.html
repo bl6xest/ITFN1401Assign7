@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Community Chat — Quez Music Corner</title>
+    <link rel="stylesheet" href="quezmusicdoop.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="comments.html" class="active">Community Chat</a>
+        <a href="sharing.html">Share Music Taste</a>
+        <a href="register.html">Create Account</a>
+    </nav>
+
+    <section>
+        <h2>Community Chat 💬</h2>
+        <p class="intro">Chat about music, drop recommendations, and respond to each other.</p>
+
+        <div id="userPlace" style="margin-bottom:12px;"></div>
+
+        <form id="commentForm">
+            <label for="commentText">Your comment</label>
+            <textarea id="commentText" rows="4" placeholder="Say something about a song..." required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+
+        <h3 style="margin-top:18px">Recent Comments</h3>
+        <div id="commentsList" style="margin-top:10px;"></div>
+    </section>
+
+    <footer>
+        <p>mwoodard7@student.clayton.edu</p>
+    </footer>
+
+    <script src="storage.js"></script>
+</body>
+</html>

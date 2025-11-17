@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Share Music — quez music corner</title>
+    <link rel="stylesheet" href="quezmusicdoop.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="comments.html">Community Chat</a>
+        <a href="sharing.html" class="active">Share Music Taste</a>
+        <a href="register.html">Create Account</a>
+    </nav>
+
+    <section>
+        <h2>Share Your Music 🎧</h2>
+        <p class="intro">Tell the community what you’re into — paste a Spotify link or an album cover URL.</p>
+
+        <div id="userPlace" style="margin-bottom:12px;"></div>
+
+        <form id="shareForm">
+            <label for="songTitle">Song title</label>
+            <input id="songTitle" type="text" placeholder="e.g. Doing It Wrong" required>
+
+            <label for="songArtist">Artist</label>
+            <input id="songArtist" type="text" placeholder="e.g. Drake" required>
+
+            <label for="songLink">Song link (Spotify or YouTube) - optional</label>
+            <input id="songLink" type="url" placeholder="https://open.spotify.com/...">
+
+            <label for="songCover">Cover image URL (optional)</label>
+            <input id="songCover" type="url" placeholder="https://...">
+
+            <button type="submit">Share Song</button>
+        </form>
+
+        <h3 style="margin-top:18px">Community Shares</h3>
+        <div id="sharedList" style="margin-top:10px;"></div>
+    </section>
+
+    <footer>
+        <p>mwoodard7@student.clayton.edu</p>
+    </footer>
+
+    <script src="storage.js"></script>
+</body>
+</html>
